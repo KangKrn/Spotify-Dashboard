@@ -17,6 +17,15 @@
   align-items: center;
 }
 
+.header{
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   width: 100%;
   height: 100px;
@@ -70,7 +79,7 @@
 }
 
 .grid {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
