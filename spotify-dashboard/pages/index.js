@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import Link from 'next/link';
 
 export default function Home() {
@@ -18,38 +18,38 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          A mini project using {' '}
+          <code className={styles.code}>Next.js</code>
         </p>
         
         <div className={styles.grid}>
+
           <Link href="/sub/user-search">
-            <a  className={styles.card}>User Search</a>
-          </Link>
-          
-          <Link href="/sub/song-search">
-            <a className={styles.card}>
-              Search Music
+            <a  className={styles.card}>
+              <h2>User Search</h2>
+              <div>Search for Users using their Spotify ID to see their favourites and playlists.</div>
             </a>
           </Link>
-          {/* <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a> */}
+
+          <Link href="/sub/song-search">
+            <a className={styles.card}>
+              <div>
+                <h2>Search Music</h2>
+                Search for artists, albums, top-tracks, playlists, and new-releases from Spotify's API
+              </div>
+            </a>
+          </Link>
+
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
+        
+          Made with {' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/nextjs.svg" alt="Next.js Logo" width={60} height={30} />
           </span>
-        </a>
+        
       </footer>
     </div>
   )
